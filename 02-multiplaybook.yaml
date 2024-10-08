@@ -5,3 +5,10 @@
   - name: ping the server
     ansible.builtin.ping:
     msg: "This is from play book 1 and task1"
+#playbook-2
+- name: ping the server
+  hosts: web #which hosts your ansible wants to connect
+  tasks: #list of tasks/modules/collections
+  - name: ping the server
+    ansible.builtin.ping:
+    msg: "This is from play book 2 and task1"
