@@ -1,9 +1,8 @@
-#playbook3
-- name: ngnix install and run
+- name: nginx install and run
   hosts: web
-  become: yes # take sudo acess
+  become: yes #take sudo access
   tasks:
-   - name: Install ngnix
-     ansible.builtin.package: # heterogenous module that can work  for all distros
-       name: ngnix
-       state: present
+  - name: install nginx
+    ansible.builtin.package: #heterongenous module that can work for all distros
+      name: nginx
+      state: present
