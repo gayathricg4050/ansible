@@ -3,7 +3,7 @@
   hosts: web
   become: yes # take sudo acess
   tasks:
-    - name: Install ngnix
-      ansible.builtin.package: # heterogenous module that can work  for all distros
-      name: ngnix
-      state: present
+   - name: Install ngnix
+     ansible.builtin.package: # heterogenous module that can work  for all distros
+       name: ngnix
+       state: present
