@@ -1,5 +1,5 @@
 #playbook3
-- name: Install ngnix and run
+- name: ngnix install and run
   hosts: web
   become: yes # take sudo acess
   tasks:
