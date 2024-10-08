@@ -3,5 +3,5 @@
   hosts: web #which hosts your ansible wants to connect
   tasks: #list of tasks/modules/collections
   - name: ping the server
-    ansible.builtin.ping:
+    ansible.builtin.debug:
       msg: "This is from play book 1 and task1"
