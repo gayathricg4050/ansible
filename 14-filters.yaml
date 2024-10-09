@@ -22,4 +22,9 @@
       numbers: [1,2,22,3,4,4,7,8,1,1]
     ansible.builtin.debug:
       msg: '{{ numbers | unique }}'
-      
+
+  - name: check my ip address
+    vars: 
+      myip: "192.34.1.1"
+    ansible. builtin.debug:
+      msg: "{{ myip | ansible.utils.ipv4 }}"
